@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Diet survey</title>
+  <meta charset="UTF-8" />
+  <meta 
+    name="viewport" 
+    content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      background-color: #945D60;
+      color: antiquewhite;
+      font-family: 
+        'Gill Sans', 
+        'Gill Sans MT', 
+        Calibri, 
+        'Trebuchet MS', 
+        sans-serif;
+      font-size: 16px;
+    }
+    
+    .form-main {
+      background-color: #626e600;
+    }
+   
+    .form-set {
+      
+    }
+
+    .form-entry {
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-main">
+    <header>
+      <h1 id="title">Dietary Pattern Survey</h1>
+      <p id="description">
+        Please help us understand how people eat for health and longevity
+      </p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-set">
+        <label 
+          id="name-label" 
+          for="name">
+          Name
+        </label>
+        <input
+          type="name" 
+          id="name-label" 
+          name="name" 
+          class="form-entry" 
+          placeholder="Please type name here" 
+          required
+        />
+      </div>
+
+      <div class="form-set">
+        <label 
+          id="email-label" 
+          for="email">
+          E-mail
+        </label>
+        <input
+          type="email"
+          id="email-label"
+          name="email"
+          class="form-entry"
+          placeholder="Please type e-mail here"
+          required
+          />
+      </div>
+
+      <div class="form-set">
+        <label 
+          id="number-label" 
+          for="number">
+          Age
+        </label>
+        <input 
+          type="number"
+          id="number-label"
+          name="age"
+          class="form-entry"
+          placeholder="Age"
+          min="1"
+          max="150"
+        />
+      </div>
+
+      <div class="form-set">
+        <p>How would you identify your dietary pattern (select one)?:</p>
+        <select 
+          id="dropdown" 
+          name="diet"
+          class="form-entry">
+          <option value="omnivore">Omnivore</option>
+          <option value="keto">Keto/Low Carb</option>
+          <option value="carnivore">Carnivore</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+        </select>
+      </div>
+
+      <div class="form-set">
+        <p>How strict are you?</p>
+      <label
+        type="radio"
+        name="strictness"
+      </div>
+
+      <div class="form-set">
+        <label id="" for="">
+        </label>
+      </div>
+     </div>
+    </form>
+  </div>
+</body>
+
+</html>
